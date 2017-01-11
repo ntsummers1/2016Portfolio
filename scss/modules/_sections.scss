@@ -1,0 +1,529 @@
+// Section Background Colors
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+.white {
+    background-color: #fff;
+}
+
+.red {
+    background-color: $red;
+}
+
+.purple {
+    background-color: $purple;
+}
+
+.near-black {
+    background-color: $near-black;
+    color: $white;
+}
+
+.blue {
+    background-color: $primary-color;
+    color: $white;
+}
+
+.light-grey {
+    background-color: $secondary-color;
+    color: $white;
+}
+
+
+// Section Styling
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+.main {
+
+    &-body {
+        margin-top: 6.5rem;
+    }
+
+    &-anchor {
+        display: block;
+        height: 6.5rem; /*same height as header*/
+        margin-top: -6.5rem; /*same height as header*/
+        visibility: hidden;
+    }
+
+    &-sections {
+
+        padding: 20px 0 40px 0;
+
+        &:first-child {
+            padding-top: 0;
+        }
+
+        &:last-child {
+            border-bottom: none;
+        }
+
+
+        // Project Section Styling
+        //––––––––––––––––––––––––––––––––––––––––––––––––––
+        .project {
+
+            &-row {
+                margin-bottom: 0;
+                @media ($bp-550) { margin-bottom: 20px; }
+            }
+
+            &-header {
+                line-height: 6.5rem;
+                margin-bottom: 0;
+            }
+
+            &-image {
+                width: 100%;
+                height: auto;
+
+                &-container {
+                    position:relative;
+                }
+
+                &-overlay {
+                    width: 100%;
+                    height: 100%;
+                    -webkit-transition: background-color .5s;
+                    transition: background-color .5s;
+                    background-color: none;
+                    position: absolute;
+                    top: 0;
+
+                    a {
+                        opacity: 0;
+                        color: #fff;
+                        display:block;
+                        -webkit-transition: all .5s; /* Safari */
+                        transition: all .5s;
+                        text-align: center;
+                        font-size:2.2rem;
+                        text-decoration: none;
+                        height: 100%; width: 100%;
+
+                        &:hover, &:focus {
+                            opacity: 1;
+                            background-color: rgba(51, 195, 240, 0.9);
+                        }
+
+
+                    }
+                }
+            }
+
+            &-link {
+                position: relative;
+                top: 50%;
+                -webkit-transform: translateY(-50%);
+                -ms-transform: translateY(-50%);
+                transform: translateY(-50%);
+            }
+
+            &-search {
+                background-image: url('../images/search.msu.edu.png');
+            }
+
+            &-maps {
+                background-image: url('../images/maps.msu.edu.png');
+            }
+
+            &-maps-interactive {
+                background-image: url('../images/maps.msu.edu:interactive.png');
+            }
+
+        }
+
+        // Skills Styling
+        //––––––––––––––––––––––––––––––––––––––––––––––––––
+        .circle-center {
+            text-align: center;
+        }
+
+        .skills {
+
+            &-cloud {
+                width: 550px;
+                height: 300px;
+                margin: 0 auto;
+                padding: 2em 0;
+                font: 100% Arial, sans-serif;
+                position: relative;
+
+                span {
+                    position:absolute;
+                }
+
+            }
+
+            &-1 {
+                top: 1em;
+                left: 1.5em;
+                font-size: 100px;
+                color: #626262;
+            }
+
+            &-2 {
+                top: 2em;
+                left: 2em;
+                font-size: 40px;
+            }
+
+            &-3 {
+                font-size: 60px;
+                -moz-transform: rotate(-90deg);
+                -webkit-transform: rotate(-90deg);
+                -o-transform: rotate(-90deg);
+                transform: rotate(-90deg);
+                top: 2.7em;
+                left: .7em;
+            }
+
+            &-4 {
+                font-size: 30px;
+                top: 6.2em;
+                left: 5em;
+            }
+
+            &-5 {
+                font-size: 40px;
+                -moz-transform: rotate(-45deg);
+                -webkit-transform: rotate(-45deg);
+                -o-transform: rotate(-45deg);
+                transform: rotate(-45deg);
+                bottom: 1.3em;
+                left: 1.4em;
+            }
+
+            &-6 {
+                bottom: .43em;
+                right: .55em;
+                color: #5e0000;
+                font-size: 120px;
+            }
+
+            &-7 {
+                bottom: 0;
+                right: .5em;
+                font-size: 48px;
+            }
+
+            &-8 {
+                font-size: 50px;
+                -moz-transform: rotate(-90deg);
+                -webkit-transform: rotate(-90deg);
+                -o-transform: rotate(-90deg);
+                transform: rotate(-90deg);
+                top: 1.9em;
+                left: 6.1em;
+            }
+
+            &-9 {
+                bottom: 8.8em;
+                right: 5.8em;
+            }
+
+            &-10 {
+                font-size: 20px;
+                -moz-transform: rotate(-90deg);
+                -webkit-transform: rotate(-90deg);
+                -o-transform: rotate(-90deg);
+                transform: rotate(-90deg);
+                top: 3.2em;
+                left: 9.5em;
+                width: 60px;
+            }
+
+            &-11 {
+                bottom: 2em;
+                left: -1.6em;
+                color: #6e6e6e;
+                font-size: 70px;
+                -moz-transform: rotate(-90deg);
+                -webkit-transform: rotate(-90deg);
+                -o-transform: rotate(-90deg);
+                transform: rotate(-90deg);
+            }
+
+            &-12 {
+                bottom: 1em;
+                left: 5.6em;
+                color: #6e6e6e;
+                font-size: 40px;
+            }
+
+            &-13 {
+                left: 2.4em;
+                top: 2.2em;
+            }
+
+            &-14 {
+                top: 10em;
+                left: 11.3em;
+                -moz-transform: rotate(-6deg);
+                -webkit-transform: rotate(-6deg);
+                -o-transform: rotate(-6deg);
+                transform: rotate(-6deg);
+            }
+
+            &-15 {
+                top: 3.7em;
+                left: 8.5em;
+                -moz-transform: rotate(-6deg);
+                -webkit-transform: rotate(-6deg);
+                -o-transform: rotate(-6deg);
+                transform: rotate(90deg);
+                font-size: 50px;
+            }
+
+            &-16 {
+
+            }
+
+        }
+
+        // Experience Styling
+        //––––––––––––––––––––––––––––––––––––––––––––––––––
+        .experience {
+            &-header {
+                color: $light-green;
+            }
+
+            &-job {
+
+                &-title {
+                    margin:0;
+                }
+
+                &-location {
+                    margin: 0;
+                    font-size: 1.8rem;
+                }
+
+                &-time {
+                    font-size:1.5rem;
+                }
+
+                &-border {
+                    border: 1px solid $light-green;
+                    margin-bottom: 2.5rem;
+                }
+
+                &-achievement {
+                    &-header {
+                        margin-bottom: 0;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+
+        // Education Styling
+        //––––––––––––––––––––––––––––––––––––––––––––––––––
+        .education {
+
+            &-header {
+                line-height: 6.5rem;
+                margin-bottom: 0;
+                color: $light-green;
+            }
+
+            &-title {
+                margin-bottom: 0;
+            }
+
+        }
+
+        // About Styling
+        //––––––––––––––––––––––––––––––––––––––––––––––––––
+        .about {
+
+            &-header {
+                line-height: 6.5rem;
+                margin-bottom: 0;
+                color: #fff;
+            }
+
+            &-image-container {
+                display: block;
+                width: auto;
+                float: none;
+                margin-bottom: 25px;
+                @media ($bp-750 ) {
+                    display: inline-block;
+                    width: 32%;
+                    float: left;
+                    margin-bottom: 0;
+                }
+
+                @media ($bp-1000 ) {
+                    width: 25%;
+                }
+            }
+
+            &-image {
+                border: 0;
+                border-radius: 120px;
+                background-size: cover;
+                background-position: center;
+                max-width: 400px;
+                height: 280px;
+                margin: 10px auto;
+                display: block;
+                @media ($bp-750 ) {
+                    float: left;
+                    margin: 10px 0 0 0;
+                }
+            }
+
+            &-chat {
+
+                width: 280px;
+                margin: 0 auto;
+
+
+                @media ($bp-400 ) {
+                    width: 340px;
+                }
+
+                @media ($bp-550 ) {
+                    width: 420px;
+                }
+
+                @media ($bp-750 ) {
+                    width: 68%;
+                    margin: 0 0 0 0;
+                    display: inline-block;
+                    float: left;
+                }
+
+                @media ($bp-1000 ) {
+                    width: 75%;
+                }
+                .bubble{
+                    background-color: #FFFFFF;
+                    color: #333;
+                    border-radius: 5px;
+                    display: inline-block;
+                    padding: 10px 18px;
+                    position: relative;
+                    vertical-align: top;
+                }
+
+                .bubble::before {
+                    background-color: #FFF;
+                    content: "\00a0";
+                    display: block;
+                    height: 16px;
+                    position: absolute;
+                    top: -8px;
+                    margin-left: auto;
+                    margin-right: auto;
+                    left: 0;
+                    right: 0;
+                    transform:             rotate( 29deg ) skew( -35deg );
+                        -moz-transform:    rotate( 29deg ) skew( -35deg );
+                        -ms-transform:     rotate( 29deg ) skew( -35deg );
+                        -o-transform:      rotate( 29deg ) skew( -35deg );
+                        -webkit-transform: rotate( 29deg ) skew( -35deg );
+                    width:  20px;
+
+                    @media ($bp-750) {
+                        top: 40px;
+                        margin: 0;
+                    }
+                }
+
+                .me {
+                    float: left;
+                    margin: 0;
+                    @media ($bp-750) {
+                        margin: 50px 20px 5px 20px;
+                    }
+                }
+
+                .me::before {
+                    left: -9px;
+                }
+            }
+
+        }
+
+        // Contact Styling
+        //––––––––––––––––––––––––––––––––––––––––––––––––––
+
+        .contact {
+
+            &-header {
+                line-height: 6.5rem;
+                margin-bottom: 0;
+            }
+
+            &-form {
+
+                position: relative;
+
+                &-primary {
+                    width: 100%;
+
+                    @media ($bp-750) {
+                        width: 50%;
+                    }
+                }
+
+                &-response {
+                    position: absolute;
+                    height: 100%;
+                    width: 100%;
+                    top: 0;
+                    background: #fff;
+                    display: none;
+                    opacity: 0;
+                    -webkit-transition: all .5s; /* Safari */
+                    transition: all .5s;
+
+                    &-cog {
+                        display: block;
+                        opacity: 0;
+                        -webkit-transition: all .5s; /* Safari */
+                        transition: all .5s;
+                        margin-top: 80px;
+                        color: $primary-color;
+                        text-align: center;
+                        position:absolute;
+                        left: 0; right: 0;
+                    }
+
+                    &-success {
+                        display: block;
+                        opacity: 0;
+                        -webkit-transition: all .5s; /* Safari */
+                        transition: all .5s;
+                        text-align: center;
+                        margin-top: 80px;
+                        font-size: 32px;
+                        position:absolute;
+                        left: 0; right: 0;
+                    }
+
+                    &-button {
+                        display: block;
+                        opacity: 0;
+                        -webkit-transition: all .5s; /* Safari */
+                        transition: all .5s;
+                        margin: 10px auto 0 auto;
+                        white-space: normal;
+                        line-height:20px;
+                        height: 50px;
+
+                        &:hover, &:focus {
+                            border: 1px solid $primary-color;
+                        }
+                    }
+
+
+                }
+            }
+
+        }
+
+    }
+
+}
